@@ -25,7 +25,7 @@ public class BaseClass {
 
 	}
 
-	@Test(groups = { "pradeep" })
+	@Test(groups = { "pradeep" }, description = "Test Method to execute")
 	public void testMethod1() throws InterruptedException {
 
 		driver.get("https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table3");

@@ -23,7 +23,7 @@ public class BaseClass {
 		options.addArguments("headless");
 		driver = new ChromeDriver(options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
 	}
 
 	@Test(groups = { "pradeep" }, description = "Test Method description")

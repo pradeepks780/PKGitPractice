@@ -53,6 +53,7 @@ public class BaseClass {
 	public void tearDown() throws InterruptedException {
 
 		driver.close();
+		driver.quit();
 
 	}
 

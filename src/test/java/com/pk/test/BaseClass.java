@@ -26,7 +26,7 @@ public class BaseClass {
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
 	}
 
-	@Test(groups = { "pradeep" }, description = "Test Method description")
+	@Test(groups = { "pradeepBranch" }, description = "Test Method description")
 	public void testMethod1() throws InterruptedException {
 
 		driver.get("https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table3");

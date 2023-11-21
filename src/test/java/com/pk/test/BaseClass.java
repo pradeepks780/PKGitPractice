@@ -1,5 +1,6 @@
 package com.pk.test;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -21,6 +22,7 @@ public class BaseClass {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("headless");
 		driver = new ChromeDriver(options);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 
 	}
 

@@ -39,14 +39,14 @@ public class BaseClass {
 		List<WebElement> rows = table.findElements(By.xpath(".//tr"));
 
 		System.out.println(rows.get(2).findElements(By.xpath(".//td")).get(1).getText() );
-//		for (WebElement row : rows) {
-//
-//			List<WebElement> td = row.findElements(By.xpath(".//th"));
-//
-//			for (WebElement tableheader : td) {
-//				System.out.println(tableheader.getText());
-//			}
-//		}
+		for (WebElement row : rows) {
+
+			List<WebElement> td = row.findElements(By.xpath(".//th"));
+
+			for (WebElement tableheader : td) {
+				System.out.println(tableheader.getText());
+			}
+		}
 	}
 
 	@AfterTest

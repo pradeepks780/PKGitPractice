@@ -49,6 +49,13 @@ public class BaseClass {
 			}
 		}
 	}
+	
+
+	@Test(groups = { "QAbranch" }, description = "Test Method2 description")
+	public void testMethod2() throws InterruptedException {
+
+		System.out.println("QABranch");
+	}
 
 	@AfterTest(description = "Method to close all browsers post actions")
 	public void tearDown() throws InterruptedException {

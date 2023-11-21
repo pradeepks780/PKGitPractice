@@ -49,7 +49,7 @@ public class BaseClass {
 		}
 	}
 
-	@AfterTest
+	@AfterTest(description = "Method to close all browsers post actions")
 	public void tearDown() throws InterruptedException {
 
 		driver.close();
